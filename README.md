@@ -3,7 +3,7 @@
 
   ## Analyze Text with Azure AI
 
-  Azure AI Language is designed to help you extract information from text. It provides functionality that you can use for :
+  Azure AI Language is designed to help you extract information from text. It provides functionality that you can use for:
 
 - Language detection - determining the language in which text is written.
 
