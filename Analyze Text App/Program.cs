@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
+using Microsoft.Extensions.Configuration.EnvironmentVariables;
 using Azure;
 using Azure.AI.TextAnalytics;
 
@@ -12,9 +14,16 @@ namespace Analyze_Text_App
         {
             try
             {
+                var environment = Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT");
+
                 // Get config settings from AppSettings
-                IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
+                IConfigurationBuilder builder = new ConfigurationBuilder()
+                    .AddJsonFile($"appsettings.json", true, true)
+                    .AddJsonFile($"appsettings.development.json", true, true)
+                    .AddEnvironmentVariables();
+
                 IConfigurationRoot configuration = builder.Build();
+
                 string aiSvcEndpoint = configuration["AIServicesEndpoint"];
                 string aiSvcKey = configuration["AIServicesKey"];
 
