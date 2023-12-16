@@ -1,5 +1,9 @@
 # Azure AI Language App
-  Azure AI Language API provide an API for common text analysis techniques that you can easily integrate into your own application code. Azure AI Language is designed to help you extract information from text. It provides functionality that you can use for :
+  Azure AI Language API provide an API for common text analysis techniques that you can easily integrate into your own application code. 
+
+  ## Analyze Text with Azure AI
+
+  Azure AI Language is designed to help you extract information from text. It provides functionality that you can use for :
 
 - Language detection - determining the language in which text is written.
 
