@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "Analyze_Text_App": {
+      "commandName": "Project"
+    },
+    "DevEnvironment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "ProdEnvironment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Production"
+      }
+    }
+  }
+}
