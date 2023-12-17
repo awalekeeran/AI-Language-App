@@ -1,0 +1,19 @@
+{
+  "profiles": {
+    "Question_Answering_App": {
+      "commandName": "Project"
+    },
+    "DevEnvironment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "ProdEnvironment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Production"
+      }
+    }
+  }
+}
